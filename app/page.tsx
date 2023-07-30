@@ -10,9 +10,9 @@ export default function Home() {
       <header className="container z-40 bg-background">
         <div className="flex h-20 justify-between items-center">
           <div>
-            <h1 className="capitalize">
+            <span className="capitalize">
               <b>Somethings</b>
-            </h1>
+            </span>
           </div>
           <nav>
             <Link
