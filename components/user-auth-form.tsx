@@ -3,6 +3,7 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
+import { signIn } from "next-auth/react";
 export function UserAuthForm() {
   const [isLoading, setIsLoading] = React.useState<boolean>(false);
 
@@ -40,6 +41,7 @@ export function UserAuthForm() {
         </div>
       </div>
       <button
+        onClick={() => signIn("github")}
         type="button"
         className={cn(buttonVariants({ variant: "outline" }))}
         disabled={isLoading}
